@@ -1,0 +1,102 @@
+@import '../../../style/selectedTheme.scss';
+
+.chat{
+	background: $bg-secondary;
+	color: $text-secondary;
+
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	border-radius: 5px;
+
+	&-messages, &-members{
+		position: relative;
+		vertical-align: top;
+		height: 100%;
+		z-index: 1;
+
+		&-header{
+			background: $bg-accentuation;
+			position: relative;
+			display: block;
+			color: $text-secondary;
+			text-align: center;
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+			z-index: 2;
+
+			h1{
+				margin: 0;
+			}
+		}
+	}
+
+	&-messages{
+		display: inline-block;
+		width: 500px;
+		min-width: 70%;
+		height: 500px;
+
+
+		&-header{
+
+			&-settings{
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				position: absolute;
+				right: 1em;
+				top: 0.25em;
+				cursor: pointer;
+
+				// Since this is a button, we remove the default style
+				border: none;
+				background: none;
+				color: inherit;
+				margin: 0;
+				padding: 0;
+
+			}
+		}
+		&-list{
+			display: block;
+			padding: 10px;
+			height: calc(100% - 6em);
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			&-message{
+				display: block;
+				width: 100%;
+				margin: 10px 0;
+
+				&.sent{
+					text-align: right;
+				}
+
+				&.received{
+					text-align: left;
+				}
+
+				.container{
+					display: inline-block;
+					max-width: 50%;
+				}
+			}
+		}
+		&-send{   
+			display: block;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+		}
+	}
+
+	&-members{
+		display: inline-block;
+		min-width: 200px;
+    	width: 30%;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+	}
+}

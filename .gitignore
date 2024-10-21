@@ -1,0 +1,28 @@
+# Ignore log files
+svelte/logs
+svelte/*.log
+svelte/npm-debug.log*
+svelte/yarn-debug.log*
+svelte/yarn-error.log*
+svelte/pnpm-debug.log*
+svelte/lerna-debug.log*
+
+# Ignore dependencies, build files, and cache files
+# as well as local configurations
+svelte/node_modules
+svelte/dist
+svelte/dist-ssr
+svelte/*.local
+
+# Ignore development environment files
+.vscode/*
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Keep recommended extensions
+!.vscode/extensions.json

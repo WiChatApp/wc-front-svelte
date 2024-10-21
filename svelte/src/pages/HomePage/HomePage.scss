@@ -1,0 +1,38 @@
+.grid-container {
+    text-align: center; 
+    margin: 20px;
+}
+
+.card-container {
+    display: inline-block; 
+	vertical-align: top;
+    margin: 30px;
+}
+
+.actions{
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-right: 10px;
+    
+    .add-button{
+        display: inline-block;
+    }
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.creation-btn{
+    margin: 10px auto 0 0;
+}
+
+.chat-settings{
+	position: absolute;
+	filter: drop-shadow(0 0 2px black);
+	z-index: 3;
+}

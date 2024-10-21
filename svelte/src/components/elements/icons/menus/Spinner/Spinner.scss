@@ -1,0 +1,30 @@
+@import '../../../../../style/selectedTheme.scss';
+
+// Default colors
+$spinner-circle: rgba(100, 100, 100, 1.0);
+$spinner-emphasis: rgba(30, 200, 200, 1.0);
+
+// Set variables according to the theme if they exist
+@if (global-variable-exists('bg-primary') and global-variable-exists('bg-secondary')) {
+	$spinner-circle: $bg-secondary;
+	$spinner-emphasis: $bg-primary;
+}
+
+.spinner {
+	$spinner-size: 1.5em;
+
+	display: inline-block;
+	width: $spinner-size;
+	height: $spinner-size;
+	margin: 0 5px;
+	vertical-align: middle;
+	border: calc($spinner-size/5) solid $spinner-circle;
+	border-top-color: $spinner-emphasis;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
