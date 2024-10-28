@@ -1,0 +1,40 @@
+@import '../../../style/selectedTheme.scss';
+
+.input{
+	color: $input-text;
+	position: relative;
+
+	&-field {
+		font-family: $global-font-family;
+		background-color: $input-bg;
+		min-height: 30px;
+		width: 100%;
+		border-radius: 5px;
+		border: 1px solid $input-border;
+		padding: 10px 5px;
+
+		&::placeholder {
+			color: $input-placeholder;
+		}
+
+		&:focus {
+			border: 1px solid $input-border-active;
+		}
+	}
+
+	&-icon {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		height: 1em;
+		width: 1em;
+		transform: translateY(-50%);
+		cursor: pointer;
+
+		// Puisqu'il s'agit d'un élément button, on retire les styles par défaut
+		border: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+}

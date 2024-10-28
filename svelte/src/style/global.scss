@@ -1,0 +1,143 @@
+// This is where we determine which theme to apply to the application
+@import './selectedTheme.scss';
+
+:root {
+	// Some elements (input, button, scrollbar, ...) of the browser are displayed with an automatic style
+	// determined by the user's preference
+	// For example, if the user has set a dark theme in their browser
+	// or uses "follow system theme" and their system is in dark theme,
+	// then the browser elements will be displayed in dark theme
+	// To disable this behavior, we can use the "color-scheme" property
+	// to determine in which themes we allow the display of browser elements
+	// For now, the dark theme is not supported
+	color-scheme: light /* dark */;
+  
+	// Font options
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: 'AppFont';
+	src: url('../../../../../static/assets/fonts/Agdasima/Agdasima-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'AppFont';
+	src: url('../../../../../static/assets/fonts/Agdasima/Agdasima-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+body {
+	font-family: $global-font-family;
+	// Base calculation for font sizes in "em" units
+	font-size: 14px;
+
+	color: $text-content;
+
+	background-color: $bg-content;
+	
+	margin: 0;
+	padding: 0;
+
+	* {
+		// Remove outlines on clickable elements
+		outline: none;
+		// Avoid overflow related to margins and paddings
+		box-sizing: border-box;
+	}
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $global-font-family;
+	font-weight: bold;
+}
+
+// By default, calculated relative to the font-size of html
+// otherwise equal to the font-size of the parent element (container)
+//⚠️Note: Fonts should be applied to containers, not to the elements themselves!
+p,
+button,
+input,
+select,
+textarea,
+label {
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+hr {
+	border: 1px solid $separator;
+}
+
+a {
+	color: $link-content;
+	text-decoration: none;
+	transition: $input-transition-normal;
+}
+
+// Centered content margins (values must be in pixels)
+@media (max-width: 768px) {
+	:root {
+		--content-margin: 5px;
+	}
+}
+@media (min-width: 768px) {
+	:root {
+		--content-margin: 30px;
+	}
+}
+@media (min-width: 992px) {
+	:root {
+		--content-margin: 40px;
+	}
+}
+@media (min-width: 1200px) {
+	:root {
+		--content-margin: 50px;
+	}
+}
+@media (min-width: 1400px) {
+	:root {
+		--content-margin: 200px;
+	}
+}
+
+main {
+	display: block;
+	margin: 5px var(--content-margin);
+}
+
+@import './debug.scss';

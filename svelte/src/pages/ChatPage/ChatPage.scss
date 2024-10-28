@@ -1,0 +1,10 @@
+.chat-element{
+	display: block;
+	width: 100%;
+}
+
+.member-settings{
+	position: absolute;
+	filter: drop-shadow(0 0 2px black);
+	z-index: 3;
+}

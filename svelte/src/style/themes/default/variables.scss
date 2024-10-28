@@ -1,0 +1,35 @@
+// ==== Theme ====
+// Primary
+$bg-primary: rgb(0, 120, 80);
+$text-primary: rgba(255, 255, 255, 1.0);
+$link-primary: rgba(255, 255, 255, 1.0);
+$link-primary-hover: rgba(204, 204, 204, 1.0);
+
+// Secondary
+$bg-secondary: rgba(50, 50, 50, 1.0);
+$text-secondary: rgba(255, 255, 255, 1.0);
+$link-secondary: rgba(255, 255, 255, 1.0);
+$link-secondary-hover: rgba(204, 204, 204, 1.0);
+
+// Content
+$bg-content: rgba(255, 255, 255);
+$text-content: rgba(0, 0, 0, 1.0);
+$link-content: rgba(30, 144, 255, 1.0);
+$img-content: rgba(200, 200, 200, 1.0);
+$separator: rgba(187, 187, 187, 1.0);
+$bg-accentuation: rgb(34, 34, 34);
+$text-accentuation: rgba(255, 255, 255, 1.0);
+
+// Input fields
+$input-bg: rgba(204, 204, 204, 1.0);
+$input-text: rgba(0, 0, 0, 1.0);
+$input-border: rgba(0, 0, 0, 0.1);
+$input-border-active: rgba(0, 0, 0, 0.2);
+$input-placeholder: rgba(148, 148, 148, 1.0);
+// Transition to an active state
+$input-transition-hover: ease-out 0.2s;
+// Return to the initial state
+$input-transition-normal: ease-in 0.2s;
+
+// ==== Fonts ====
+$global-font-family: 'AppFont', Calibri, sans-serif;
