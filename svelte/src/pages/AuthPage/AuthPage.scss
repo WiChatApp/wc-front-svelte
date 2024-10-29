@@ -1,0 +1,16 @@
+@import '../../style/selectedTheme.scss';
+
+.form{
+	background: $bg-secondary;
+	color: $text-secondary;
+	margin: 10px auto;
+	width: 400px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+	.field{
+		display: block;
+		margin: 10px 0;
+	}
+}

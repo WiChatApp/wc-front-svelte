@@ -1,0 +1,73 @@
+@import '../../../style/selectedTheme.scss';
+
+footer {
+	background-color: black;
+	color: $text-secondary;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 0 var(--content-margin);
+
+	h1 {
+		font-weight: bold;
+	}
+
+	.row {
+		width: 100%;
+		display: block;
+	}
+
+	.col {
+		display: inline-block;
+		width: 240px;
+		height: 100%;
+		padding: 0;
+		text-align: center;
+		vertical-align: top;
+		margin: auto 50px;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			text-align: left;
+
+			li {
+				margin: 5px 10px;
+
+				a {
+					color: $link-secondary;
+					text-decoration: none;
+					transition: $input-transition-normal;
+
+					&:hover, &:focus-visible{
+						transition: $input-transition-hover;
+						color: $link-secondary-hover;
+					}
+				}
+			}
+		}
+
+		ul.social {
+			list-style: none;
+			text-align: center;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				height: 50px;
+				width: 50px;
+			}
+		}
+	}
+
+	.copyright {
+		p {
+			display: block;
+			margin: 0;
+			padding: 5px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+$debug: false;
+
+@if $debug {
+	* {
+		outline: 1px solid transparent;
+	}
+
+	*:hover {
+		outline: 1px solid red;
+	}
+	
+	*:focus {
+		outline: 2px solid blue;
+	}
+
+	*:focus-visible {
+		outline: 3px solid purple;
+	}
+}

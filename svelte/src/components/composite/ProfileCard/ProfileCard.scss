@@ -1,0 +1,39 @@
+@import '../../../style/selectedTheme.scss';
+
+.profile-card {
+	background: $bg-accentuation;
+	color: $text-accentuation;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+
+	.avatar,
+	.username,
+	.disconnect {
+		margin: 0px 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.username {
+		h1{
+			margin: 0px;
+		}
+	}
+
+	.avatar,
+	.disconnect {
+		height: 1.5em;
+		width: 1.5em;
+	}
+
+	&-content, .disconnect{
+		cursor: pointer;
+		// Since disconnect is a button, we remove the default styles
+		border: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+		color: inherit;	
+	}
+}
