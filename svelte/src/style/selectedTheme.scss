@@ -1,0 +1,4 @@
+// This file is imported by global and by each of the components to
+// determine certain properties based on the selected theme
+// (e.g., colors, fonts, etc.)
+@import './themes/default/variables.scss';

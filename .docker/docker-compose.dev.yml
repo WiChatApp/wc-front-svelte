@@ -1,0 +1,32 @@
+services:
+  wc-svelte-s:
+    build:
+      context: ../
+      dockerfile: ".docker/svelte/Dockerfile.dev"
+    container_name: wc-svelte-c
+    env_file:
+      - "svelte/.env.dev"
+    volumes:
+      - type: bind
+        source: "../svelte/src"
+        target: "/svelte/src"
+        # Only for MacOS
+        consistency: consistent
+      - type: bind
+        source: "../svelte/static"
+        target: "/svelte/static"
+      - type: bind
+        source: "../svelte/public"
+        target: "/svelte/public"
+      - type: bind
+        source: "../svelte/index.html"
+        target: "/svelte/index.html"
+        # Only for MacOS
+        consistency: consistent
+    ports:
+      - "5173:5173"
+    networks:
+      - wc-front-network
+networks:
+  wc-front-network:
+    driver: bridge

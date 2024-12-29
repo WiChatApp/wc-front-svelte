@@ -1,0 +1,16 @@
+services:
+  wc-svelte-s:
+    build:
+      context: ../
+      dockerfile: ".docker/svelte/Dockerfile.prod"
+    container_name: wc-svelte-c
+    restart: on-failure
+    env_file:
+      - "svelte/.env.prod"
+    ports:
+      - "5173:5173"
+    networks:
+      - wc-front-network
+networks:
+  wc-front-network:
+    driver: bridge

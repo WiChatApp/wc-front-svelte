@@ -1,0 +1,15 @@
+h2,h3,h4,h5{
+	margin: 0;
+}
+
+.component{
+	margin: 5px;
+	vertical-align: top;
+	display: inline-block;
+
+	.icon{
+		width: 24px;
+		height: 24px;
+		margin: 5px;
+	}
+}

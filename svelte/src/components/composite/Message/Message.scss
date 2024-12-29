@@ -1,0 +1,70 @@
+@import '../../../style/selectedTheme.scss';
+
+.message {
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+	min-width: 150px;
+	text-align: left;
+
+	// These colors are the default colors
+	// In reality, they should be overridden by the classes
+	// "other" and "author" which are added dynamically
+	background-color: black;
+	color: white;
+
+	&.author {
+		background-color: $bg-primary;
+		color: $text-primary;
+	}
+
+	&.other {
+		background-color: $bg-accentuation;
+		color: $text-accentuation;
+	}
+
+	&-header {
+		position: relative;
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+
+		$dropdown-size: 1.5em;
+
+		h1{
+			display: inline-block;
+			margin: 0;
+			margin-right: $dropdown-size;
+		}
+
+		&-icon {
+			position: absolute;
+			right: 0;
+			top: 0.5em;
+			width: $dropdown-size;
+			height: $dropdown-size;
+			vertical-align: middle;
+
+			// Since it is a button, remove the default styles
+			border: none;
+			background: none;
+			color: inherit;
+			margin: 0;
+			padding: 0;
+
+			&.dropdown{
+				cursor: pointer;
+			}
+		}
+	}
+
+	&-content{
+		display: block;
+	}
+
+	&-time{
+		display: block;
+		text-align: right;
+		margin-top: 10px;
+	}
+}

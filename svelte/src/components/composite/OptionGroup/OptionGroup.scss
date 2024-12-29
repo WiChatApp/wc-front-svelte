@@ -1,0 +1,11 @@
+@import "../../../style/selectedTheme.scss";
+
+.option-group {
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+
+	&-item {
+		display: block;
+	}
+}

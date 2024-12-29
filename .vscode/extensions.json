@@ -1,0 +1,51 @@
+{
+	"recommendations": [
+		// -- Git
+		// Git Graph
+		"mhutchie.git-graph",
+		// GitLens
+		"eamodio.gitlens",
+		// GitLab Workflow
+		"GitLab.gitlab-workflow",
+
+		// -- Formatting
+		// Prettier
+		"esbenp.prettier-vscode",
+		// Formatting Toggle
+		"tombonnike.vscode-status-bar-format-toggle",
+
+		// -- JavaScript & Svelte
+		// Svelte for VSCode
+		"svelte.svelte-vscode",
+		// JavaScript and TypeScript Nightly
+		"ms-vscode.vscode-typescript-next",
+		// Path Intellisense
+		"christian-kohler.path-intellisense",
+
+		// -- Autocomplete
+		// GitHub Copilot
+		"GitHub.copilot",
+		// GitHub Chat
+		"GitHub.copilot-chat",
+		// IntelliCode API Usage Examples
+		"VisualStudioExptTeam.intellicode-api-usage-examples",
+		// IntelliCode Completions
+		"VisualStudioExptTeam.vscodeintellicode-completions",
+		// IntelliSense for CSS class names in HTML
+		"Zignd.html-css-class-completion",
+
+		// -- Markdown, Diagrams & Documentation
+		// Markdown All In One
+		"DavidAnson.vscode-markdownlint",
+		// markdownlint
+		"DavidAnson.vscode-markdownlint",
+		// PlantUML
+		"jebbs.plantuml",
+
+		// -- SASS
+		// Live Sass Compiler
+		"glenn2223.live-sass",
+		// Sass
+		"syler.sass-indented"
+	]
+}

@@ -1,0 +1,16 @@
+# Note: ce fichier doit être placé dans le contexte de construction de l'image Docker
+
+# Ignorer les fichiers Docker 
+.docker/**/Dockerfile.*
+.docker/**/.env*
+# Ignorer tous les fichiers et dossiers commençant par ".git"
+**/.git*
+# Ignorer tous les fichiers d'information markdown
+**/*.md
+# Ignorer les scripts shell
+**/*.sh
+# Ignorer le fichier Makefile
+Makefile
+
+# Ignorer les modules node
+svelte/node_modules/

@@ -1,0 +1,20 @@
+# Note: Docker cannot fetch files outside the build context
+# Therefore, we build this image from the project's root directory
+
+# Define the base image
+FROM node:current-alpine
+
+# Define the working directory
+WORKDIR /svelte
+
+# Copy source files (except those in .dockerignore)
+COPY svelte/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application files (except those listed in .dockerignore)
+COPY svelte/ .
+
+# Start the application
+CMD ["npm", "run", "dev"]
